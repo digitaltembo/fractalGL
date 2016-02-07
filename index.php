@@ -39,7 +39,7 @@
               $encoded = str_replace('"'. '\\"');
               echo $encoded.'">';
           }else{
-              echo '<meta id="fractalData" preset="false">'
+              echo '<meta id="fractalData" preset="false">';
           }
       }
   ?>
