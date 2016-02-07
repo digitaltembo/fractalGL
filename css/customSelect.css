@@ -1,0 +1,51 @@
+/*
+ * CSS for my custom select box, also its own project on github
+ */
+.upgradedSelect{
+    display:inline-block;
+    margin:2px;
+    
+}
+.upgradedSelect:focus {
+    outline:0;
+
+}
+.upgradedSelectList {
+    cursor:pointer;
+    list-style-type:none;
+    padding:2px;
+    margin:0;
+    border:1px solid white;
+    background:rgba(0,0,0,.9);
+    position:absolute;
+    color:#fff;
+    z-index:10;
+    max-height:15em;
+    overflow-y:auto;
+    overflow-x:hidden;
+    width:inherit;
+}
+.upgradedSelectList.hidden {
+    display:none;
+}
+.upgradedSelectList li:hover {
+    background:rgba(200,200,200,.9);
+    color:#222;
+}
+.upgradedSelected {
+    background:rgba(0,0,0,.7);
+    color:#DDD;
+    display:inline-block;
+    border-bottom:1px solid #DDD;
+}
+.upgradedSelectedText {
+    padding-left:2px;
+}
+.upgradedSelectButton {
+    float:right;
+    padding:0 2px;
+    z-index:1
+}
+.upgradedSelect:focus .upgradedSelected {
+    outline: 0;
+}

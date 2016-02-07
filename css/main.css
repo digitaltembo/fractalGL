@@ -1,0 +1,165 @@
+body{ 
+  margin:0px; 
+  padding:0px; 
+}
+#controls{
+    position:fixed;
+    left:0;
+    top:0;
+    width:20em;
+    height:100%;
+    overflow:hidden;
+    z-index:4;
+    background:rgba(0,0,0,.5);
+    padding:2em;
+    color:#fff;
+    font-family:'Helvetica', sans;
+    -webkit-transform: translate(-100%, 0);
+       -moz-transform: translate(-100%, 0);
+        -ms-transform: translate(-100%, 0);
+         -o-transform: translate(-100%, 0);
+            transform: translate(-100%, 0);
+    -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.7, 0, 0.3, 1) 0s;
+       -moz-transition:    -moz-transform 0.4s cubic-bezier(0.7, 0, 0.3, 1) 0s;
+         -o-transition:      -o-transform 0.4s cubic-bezier(0.7, 0, 0.3, 1) 0s;
+            transition:         transform 0.4s cubic-bezier(0.7, 0, 0.3, 1) 0s;
+}
+#controls.small{
+
+}
+#controls.expanded{
+    overflow-y:auto;
+    -webkit-transform: translate(0, 0);
+       -moz-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+         -o-transform: translate(0, 0);
+            transform: translate(0, 0);
+    -webkit-transition: -webkit-transform 0.8s cubic-bezier(0.7, 0, 0.3, 1) 0s;
+       -moz-transition:    -moz-transform 0.8s cubic-bezier(0.7, 0, 0.3, 1) 0s;
+         -o-transition:      -o-transform 0.8s cubic-bezier(0.7, 0, 0.3, 1) 0s;
+            transition:         transform 0.8s cubic-bezier(0.7, 0, 0.3, 1) 0s;
+}
+#fractalControls > *, #renderControls > * {
+    margin:.5em;
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+.menu-button {
+    cursor: pointer;
+    text-transform: none;
+    line-height: normal;
+    position: fixed;
+    left:0;
+    top:0;
+    z-index: 3;
+    margin: 1em;
+    padding: 0;
+    width: 2.5em;
+    height: 2.25em;
+    border: none;
+    text-indent: 2.5em;
+    font-size: 1.5em;
+    color: transparent;
+    background: rgba(0,0,0,.5);
+    opacity:1;
+    transition:opacity .5s;
+}
+.menu-button::before {
+    position: absolute;
+    top: 0.5em;
+    right: 0.5em;
+    bottom: 0.5em;
+    left: 0.5em;
+    background: linear-gradient(#DDDCC5 20%, 
+                                transparent 20%, 
+                                transparent 40%, 
+                                #DDDCC5 40%, 
+                                #DDDCC5 60%, 
+                                transparent 60%, 
+                                transparent 80%, 
+                                #DDDCC5 80%);
+    content: '';
+}
+.menu-button:hover {
+    opacity: 0.6;
+}
+.menu-button.hidden {
+    opacity:0;
+    display:initial;
+}
+/* Close Button */
+.close-button {
+    width: 1em;
+    height: 1em;
+    position: absolute;
+    right: 1em;
+    top: 1em;
+    overflow: hidden;
+    text-indent: 1em;
+    font-size: 0.75em;
+    border: none;
+    background: transparent;
+    color: transparent;
+    cursor:pointer;
+}
+.close-button::before,
+.close-button::after {
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    background: #bdc3c7;
+}
+.close-button::before {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.close-button::after {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.hidden{
+    display:none;
+}
+.subcontrols{
+    background:#000;
+    padding:.3em;
+    border-radius:.5em;
+}
+.tab{
+    border-radius: .5em .5em 0 0;
+    border-bottom: none;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    padding: .2em;
+    color: #ddd;
+    background:rgba(0,0,0,.4);
+    cursor:pointer;
+    transition: background .2s, border .8s;
+ }
+.tab.active{
+    border-top:   2px solid white;
+    border-left:  2px solid white;
+    border-right: 2px solid white;
+    color:#fff;
+    background:rgba(0,0,0,0);
+ }
+.myButton{    
+    background: rgba(0,0,0,0.3);
+    text-decoration: none;
+    color: #fff;
+    padding: .25em;
+    border-radius: .5em;
+    transition: background .5s;
+    border:none;
+    font-size:16px;
+    height:32px;
+}
+.myButton:hover{
+    background: rgba(0,0,0,0.8);
+}
