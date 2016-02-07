@@ -1,9 +1,9 @@
 FractalGL
 ===================
 
-!(Woah)[http://dijitalelefan.com/images/github/fractalGL-1.png]
+![Woah](http://dijitalelefan.com/images/github/fractalGL-1.png)
 
-This project is currently hosted on my website, (here)[http://dijitalelefan.com/projects/fractalGL/].
+This project is currently hosted on my website, [here](http://dijitalelefan.com/projects/fractalGL/).
 
 You can also play with it on your own computer by getting these files and opening up the file
 serverlesss-index.html in your favorite web browser that is hopefully not mobile and suports WebGL.
@@ -13,15 +13,15 @@ serverlesss-index.html in your favorite web browser that is hopefully not mobile
 A project using WebGL to generate a nearly infinite variety of fractal images.
 
 Also, a project to teach myself how to use WebGL, to develop some custom UI components
-including custom css-stylabel dropdown elements and my 
-(gadient selector)[https://github.com/digitaltembo/gradientSelector]. And to program in plain 
+including custom css-stylable dropdown elements and my 
+[gadient selector](https://github.com/digitaltembo/gradientSelector). And to program in plain 
 JavaScript, basically just doing everything from scratch. And to experiment with generative coding;
 the fragment shaders are all generated on the fly with more than 10000 possible permutations, just
 counting major parameter.
 
 But also, fractals are cool & interesting.
 
-!(Coool)[http://dijitalelefan.com/images/github/fractalGL-2.png]
+![Coool](http://dijitalelefan.com/images/github/fractalGL-2.png)
 
 ----
 
